@@ -1,0 +1,10 @@
+name: 'ozi-secure-release'
+description: 'Create signed wheel releases with OZI.'
+inputs:
+  wheel-sign-token:  # id of input
+    description: 'Token used to sign wheel binaries'
+    required: true
+    default: ''
+runs:
+  using: 'node20'
+  main: 'index.js'
