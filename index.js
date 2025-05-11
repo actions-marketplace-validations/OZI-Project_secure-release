@@ -3,9 +3,7 @@ const github = require('@actions/github');
 const { exec } = require('@actions/exec');
 
 try {
-  const options = {};
-  options.env = {'WHEEL_SIGN_TOKEN': core.getInput('wheel-sign-token')};
-  await exec('tox', ['-e', 'invoke', '--', 'release'], options);
+  await exec('tox', ['-e', 'invoke', '--', 'release'], {'env': {'WHEEL_SIGN_TOKEN': core.getInput('wheel-sign-token')}});
 } catch (error) {
   core.setFailed(error.message);
 }
