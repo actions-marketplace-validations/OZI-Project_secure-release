@@ -1,6 +1,11 @@
 name: 'ozi-secure-release'
 description: 'Create signed wheel releases with OZI.'
 inputs:
+  sdist:
+    description: Also build an sdist (not signed by JWS)
+    required: true
+    default: 'false'
+    type: boolean
   wheel-sign-token:  # id of input
     description: 'Token used to sign wheel binaries'
     required: true
