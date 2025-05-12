@@ -27564,7 +27564,7 @@ const build = async function(){
   var args = [
     '-m',
     'invoke',
-    '--search-root=.tox/invoke/tmp/subprojects/ozi',
+    '--search-root=.tox/invoke/tmp/subprojects/ozi/ozi',
     'release',
     core.getBooleanInput('sdist') ? ['--sdist'] : [],
     `--wheel-sign-token=${core.getInput('wheel-sign-token')}`
