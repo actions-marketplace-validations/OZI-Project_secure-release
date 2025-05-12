@@ -1,4 +1,7 @@
 name: 'ozi-secure-release'
+branding:
+  icon: 'lock'
+  color: 'purple'
 description: 'Create signed wheel releases with OZI.'
 inputs:
   sdist:
