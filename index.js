@@ -11,7 +11,7 @@ var args = [
   'release',
   core.getBooleanInput('sdist') ? ['--sdist'] : [],
   `--wheel-sign-token=${core.getInput('wheel-sign-token')}`
-]
+];
 
 try {
   await exec('python', args.flat());
