@@ -1,2 +1,2 @@
 # secure-release
-OZI secure release workflow
+OZI secure release for GitHub actions
