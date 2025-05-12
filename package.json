@@ -1,0 +1,24 @@
+{
+  "name": "secure-release",
+  "version": "1.0.0",
+  "description": "OZI secure release for GitHub actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OZI-Project/secure-release.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OZI-Project/secure-release/issues"
+  },
+  "homepage": "https://github.com/OZI-Project/secure-release#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1"
+  }
+}
